@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  input,
+  textarea,
+  p,
+  blockquote,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    /* Colors */
+    /* Primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+
+    /* Accent */
+    --blue: hsl(248, 32%, 49%);
+
+    /* Neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+  }
+
+  body {
+    font-size: 16px;
+  }
