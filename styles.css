@@ -51,6 +51,17 @@
     --grayish-blue: hsl(246, 25%, 77%);
   }
 
+  h1, p {
+    color: white;
+  }
+
   body {
     font-size: 16px;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: var(--red);
+    font-family: "Poppins", sans-serif;
+  }
+
+  main {
+    display: flex;
   }
