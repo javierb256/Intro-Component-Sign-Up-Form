@@ -225,6 +225,11 @@ p.error {
   color: red;
 }
 
+p.emailError {
+  color: red;
+  text-align: start;
+}
+
 input[type="text"].errorBorder,
 input[type="email"].errorBorder,
 input[type="password"].errorBorder {
