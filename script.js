@@ -3,18 +3,18 @@ const lastName = document.querySelector('#lastName');
 const email = document.querySelector('#email');
 const password = document.querySelector('#password');
 const button = document.querySelector('button');
-const errors = document.querySelector('.hidden');
+const error = document.querySelector('.error');
 const emailError = document.querySelector(".emailError");
 const inputsArray = document.querySelectorAll('input');
 
 button.addEventListener('click', (e)=> {
     e.preventDefault();
     if(firstName.value == "" || lastName.value == "" || email.value == "" || password.value == ""){
-        errors.classList.remove("hidden");
+        error.style.display= "block";
     }
 
     if(firstName.value != "" && lastName.value != "" && email.value != "" && password.value != ""){
-        errors.classList.add("hidden");
+        error.style.display = "none";
     }
 
     if(firstName.value == "") {
@@ -27,10 +27,10 @@ button.addEventListener('click', (e)=> {
         email.classList.add("errorBorder");
     }
     if(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email.value) == false){
-        email.classList.add("errorBorder");
+        emailError.style.display="block";
     }
     if(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email.value) == true){
-        emailError.classList.add("hidden");
+        emailError.style.display = "none";
     }
     if(password.value == "") {
         password.classList.add("errorBorder");
