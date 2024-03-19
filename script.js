@@ -28,6 +28,7 @@ button.addEventListener('click', (e)=> {
     }
     if(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email.value) == false){
         emailError.style.display="block";
+        email.classList.add("errorBorder");
     }
     if(/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email.value) == true){
         emailError.style.display = "none";
