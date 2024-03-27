@@ -7,6 +7,12 @@ const error = document.querySelector('.error');
 const emailError = document.querySelector(".emailError");
 const inputsArray = document.querySelectorAll('input');
 
+firstName.value = ""
+lastName.value = ""
+email.value = ""
+password.value = ""
+emailError.style.display = "none"
+
 button.addEventListener('click', (e)=> {
     e.preventDefault();
     if(firstName.value == "" || lastName.value == "" || email.value == "" || password.value == ""){
