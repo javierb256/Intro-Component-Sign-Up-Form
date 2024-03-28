@@ -156,7 +156,7 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-    outline: 0;
+  outline: 0;
 }
 
 input[type="text"]:active,
@@ -182,9 +182,10 @@ input[type="email"] {
   font-weight: bold;
 }
 
-input, button {
-    transition-duration: 250ms;
-    transition: ease-in-out;
+input,
+button {
+  transition-duration: 250ms;
+  transition: ease-in-out;
 }
 button {
   appearance: none;
@@ -206,12 +207,10 @@ button:hover {
   transition-duration: 300ms;
 }
 button:active {
-    border-color: var(--grayish-blue);
-
+  border-color: var(--grayish-blue);
 }
 button:focus {
-    border-color: var(--grayish-blue);
-
+  border-color: var(--grayish-blue);
 }
 
 footer {
@@ -224,8 +223,11 @@ footer {
   font-size: 2rem;
 }
 
-
-p.emailError {
+p.emailError,
+p.firstNameEmpty,
+p.lastNameEmpty,
+p.emailEmpty,
+p.passwordEmpty {
   color: red;
   text-align: start;
   margin-top: 0;
@@ -246,18 +248,16 @@ input[type="password"].errorBorder {
   body {
     background-image: url("./images/bg-intro-desktop.png");
   }
-  
 }
 
 @media screen and (max-width: 1400px) {
   main {
     max-width: 90%;
-    
   }
 }
 
 @media screen and (max-width: 900px) {
-  h1{
+  h1 {
     font-size: 2rem;
   }
   p {
@@ -272,72 +272,69 @@ input[type="password"].errorBorder {
 
 /* ipads and tablets */
 @media screen and (max-width: 768px) {
-h1 {
-  font-size: 1.9rem;
-  line-height: 40px;
-}
+  h1 {
+    font-size: 1.9rem;
+    line-height: 40px;
+  }
 
-.banner p {
-  font-size: .9rem;
-}
+  .banner p {
+    font-size: 0.9rem;
+  }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
-  font-size: 0.9rem;
-}
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 0.9rem;
+  }
 
-button {
-  font-size: .9rem;
-}
+  button {
+    font-size: 0.9rem;
+  }
 
-.formContainer p {
-  font-size: .9rem;
-}
+  .formContainer p {
+    font-size: 0.9rem;
+  }
 }
 
 /* mobile */
 @media screen and (max-width: 480px) {
-  
-body {
-  background-image: url("./images/bg-intro-mobile.png");
+  body {
+    background-image: url("./images/bg-intro-mobile.png");
+  }
 
-}
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 90px;
+  }
+  .container {
+    width: 100%;
+  }
 
-main {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7rem;
-  gap: 90px;
-}
-.container {
-  width: 100%;
-}
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-}
+  .introduction p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 35px;
+  }
+  .banner {
+    padding: 2rem 0;
+  }
 
-.introduction p {
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 35px;
-}
-.banner {
-  padding: 2rem 0;
-}
+  .banner p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+  }
 
-.banner p {
-  font-size: 1.2rem;
-  text-align: center;
-  width: 65%;
-  margin: 0 auto;
-}
-
-.formContainer {
-  margin-bottom: 6rem;
-}
-
+  .formContainer {
+    margin-bottom: 6rem;
+  }
 }
